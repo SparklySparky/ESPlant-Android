@@ -1,10 +1,11 @@
-import HomeScreen from "./screens/home_screen"
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import EspScreen from "./screens/esp_screen";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
+import HomeScreen from './screens/home_screen';
+import EspScreen from './screens/esp_screen';
 
-export default function App() {
-	const Stack = createNativeStackNavigator();
+export default function App(): React.JSX.Element {
+  const Stack = createNativeStackNavigator();
 
 	return (
 		<NavigationContainer>
